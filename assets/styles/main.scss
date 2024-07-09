@@ -1,0 +1,81 @@
+@import "variables";
+@import "fonts";
+
+body {
+  background-color: $beige;
+  font-family: "LINESeedSans", sans-serif;
+}
+
+.cms-text {
+  font-family: "LINESeedSans", sans-serif;
+}
+
+.card {
+  max-width: 18.75em;
+  margin: 0 auto;
+  padding: $containers-main-padding;
+  background-color: $light;
+  border: 1px solid $beige;
+  border-radius: $small-padding-margin;
+  box-shadow: $box-shadow;
+  text-align: center;
+
+  .card-image {
+    width: 100%;
+    border-radius: $small-padding-margin;
+  }
+
+  .card-content {
+    padding: $containers-main-padding;
+  }
+}
+
+button {
+  background-color: $purple;
+  color: $light;
+  border: none;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  border-radius: $small-padding-margin;
+  transition: background-color $transition;
+  margin-left: $small-padding-margin;
+  font-family: "LINESeedSans", sans-serif;
+
+  &:hover {
+    background-color: darken($purple, 10%);
+  }
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+
+  li {
+    margin-right: $small-padding-margin;
+
+    a {
+      padding: $small-padding-margin;
+      text-decoration: none;
+      color: $light;
+      transition: $transition;
+
+      &:hover {
+        color: darken($purple, 10%);
+      }
+    }
+  }
+}
+
+.hero-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.hero-image {
+  max-width: 10%;
+  height: auto;
+  display: block;
+  border-radius: 8em;
+}
