@@ -13,5 +13,5 @@ const props = defineProps({
 });
 </script>
 <style lang="scss">
-@import "~/assets/styles/main";
+@import "~/assets/styles/buttons";
 </style>

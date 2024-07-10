@@ -1,3 +1,6 @@
+<!-- Card parent component. Child components vary in their 
+             image, button text, title and description -->
+
 <template>
   <div class="card">
     <img :src="imageSrc" :alt="`${title} Image`" class="card-image" />
@@ -23,4 +26,5 @@ const props = defineProps({
 
 <style lang="scss">
 @import "~/assets/styles/main";
+@import "~/assets/styles/card";
 </style>

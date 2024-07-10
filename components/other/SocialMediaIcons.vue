@@ -12,19 +12,5 @@
   </div>
 </template>
 <style lang="scss" scoped>
-@import "~/assets/styles/variables";
-
-.social-media {
-  display: flex;
-}
-
-.social-media img {
-  max-width: 20px;
-  padding: $small-padding-margin;
-  transition: $transition;
-}
-
-.social-media img:hover {
-  transform: translateY(-5px);
-}
+@import "~/assets/styles/footer";
 </style>

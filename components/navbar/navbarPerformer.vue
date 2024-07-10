@@ -14,4 +14,5 @@ import ParentNavbar from "./navbarParent.vue";
 
 <style scoped lang="scss">
 @import "~/assets/styles/main";
+@import "~/assets/styles/navbar";
 </style>

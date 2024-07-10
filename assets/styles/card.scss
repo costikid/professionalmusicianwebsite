@@ -1,0 +1,34 @@
+@import "variables";
+
+//making hero section cards responsive
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+//used in different components
+.card {
+  max-width: 18.75em;
+  margin: 0 auto;
+  padding: $containers-main-padding;
+  background-color: $light;
+  border: 1px solid $beige;
+  border-radius: $small-padding-margin;
+  box-shadow: $box-shadow;
+  text-align: center;
+
+  .card-image {
+    width: 100%;
+    border-radius: $small-padding-margin;
+  }
+
+  .card-content {
+    padding: $containers-main-padding;
+  }
+}

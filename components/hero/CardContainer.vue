@@ -14,7 +14,7 @@
 
 <script setup>
 import Card from "./Card.vue";
-
+//child component. 3 cards based on the parent component structure
 const cards = [
   {
     title: "Performer",
@@ -46,18 +46,5 @@ const cards = [
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/styles/variables";
-
-.card-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-@media (min-width: $breakpoint-md) {
-  .card-container {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
+@import "~/assets/styles/card";
 </style>

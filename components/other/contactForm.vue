@@ -106,45 +106,7 @@ const resetForm = () => {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/styles/variables";
-
-.contact-form {
-  max-width: 37.5em;
-  margin: auto;
-  padding: $containers-main-padding;
-  background-color: $light;
-  box-shadow: $box-shadow;
-  border-radius: 1em;
-
-  .form-group {
-    padding: $small-padding-margin;
-
-    label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: $small-padding-margin;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 0.625em;
-      border: 0.063em solid $beige;
-      border-radius: 0.25em;
-      transition: border-color $transition;
-
-      &:focus {
-        outline: none;
-        border-color: $purple;
-        box-shadow: 0 0 0 0.188em lighten($purple, 50%);
-      }
-    }
-
-    textarea {
-      resize: vertical;
-    }
-  }
-}
+@import "~/assets/styles/contactForm";
 
 h1 {
   text-align: center;
