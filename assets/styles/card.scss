@@ -28,4 +28,8 @@
   .card-content {
     padding: $containers-main-padding;
   }
+
+  .card-button {
+    @include button-styles;
+  }
 }

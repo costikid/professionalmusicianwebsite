@@ -1,20 +1,18 @@
-<!-- Card parent component. Child components vary in their 
-             image, button text, title and description -->
-
 <template>
   <div class="card">
     <img :src="imageSrc" :alt="`${title} Image`" class="card-image" />
     <div class="card-content">
       <h2>{{ title }}</h2>
       <p>{{ description }}</p>
-      <button class="card-button" @click="navigateTo(linkTo)">
-        {{ linkText }}
-      </button>
+      <!-- Use <a> tag for navigation -->
+      <a :href="linkTo" class="card-button">{{ linkText }}</a>
     </div>
   </div>
 </template>
 
 <script setup>
+import { defineProps } from "vue";
+
 const props = defineProps({
   title: String,
   imageSrc: String,
@@ -27,4 +25,11 @@ const props = defineProps({
 <style lang="scss">
 @import "~/assets/styles/main";
 @import "~/assets/styles/card";
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 1em;
+}
 </style>
