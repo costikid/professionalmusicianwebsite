@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+
+.quotes {
+  @include centerFlexbox;
+}
+
+.quote {
+  width: calc(50% - 10px);
+  margin-bottom: $small-padding-margin;
+  padding: $small-padding-margin;
+  background-color: $light;
+  border-left: 4px solid $green-1;
+}
+
+blockquote {
+  margin: 0;
+  p {
+    font-style: italic;
+  }
+}
+
+footer {
+  text-align: right;
+  margin-top: $small-padding-margin;
+}
+
+@media (max-width: $breakpoint-md) {
+  .quotes {
+    flex-wrap: wrap;
+  }
+}

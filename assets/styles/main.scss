@@ -1,28 +1,8 @@
 @import "variables";
-@import "fonts";
+@import "logo";
 
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 body {
   background-color: $beige;
-  font-family: "LINESeedSans", sans-serif;
-}
-//need to specify to use the custom font as otherwise it would pick up the font given when text is entered in cosmic js rich text editor
-
-.cms-text {
-  font-family: "LINESeedSans", sans-serif;
-  text-align: center;
-}
-
-//this is the video with the rotating logo that appears at the beginning of each page
-.hero-img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
-}
-
-.hero-image {
-  max-width: 10%;
-  height: auto;
-  display: block;
-  border-radius: 8em;
+  font-family: "Lora", sans-serif;
 }

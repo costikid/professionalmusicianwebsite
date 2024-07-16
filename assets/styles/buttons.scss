@@ -1,17 +1,7 @@
 @import "variables";
 
-button {
-  background-color: $purple;
-  color: $light;
-  border: none;
-  padding: 0.75em 1.5em;
-  cursor: pointer;
-  border-radius: $small-padding-margin;
-  transition: background-color $transition;
-  margin-left: $small-padding-margin;
-  font-family: "LINESeedSans", sans-serif;
+@import "mixins";
 
-  &:hover {
-    background-color: darken($purple, 10%);
-  }
+button {
+  @include button-styles;
 }

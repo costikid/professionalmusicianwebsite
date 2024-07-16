@@ -4,7 +4,7 @@
   <div class="cards">
     <CardContainer />
   </div>
-  <div class="contact">
+  <div id="contact">
     <contactForm />
     <footerComponent />
     <NuxtPage />
@@ -20,7 +20,7 @@ import footerComponent from "~/components/other/footerComponent.vue";
 </script>
 
 <style scoped lang="scss">
-.contact {
+#contact {
   margin-top: 1em;
 }
 </style>

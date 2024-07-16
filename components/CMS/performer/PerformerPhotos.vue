@@ -5,15 +5,18 @@
       :key="performerImage._id"
       class="performer-image"
     >
-      <template v-for="index in 4">
-        <div v-if="performerImage.metadata[`performerimage${index}`]">
+      <template
+        v-for="(index, imgKey) in Object.keys(performerImage.metadata).filter(
+          (key) => key.startsWith('performerimage')
+        )"
+      >
+        <div v-if="performerImage.metadata[index]" class="image-container">
           <img
-            :src="
-              getImage(
-                performerImage.metadata[`performerimage${index}`].imgix_url
-              )
-            "
-            :alt="`${performerImage.title} Image ${index}`"
+            :src="getImage(performerImage.metadata[index].imgix_url)"
+            :alt="`${performerImage.title} Image ${index.replace(
+              'performerimage',
+              ''
+            )}`"
             class="performer-image-item"
           />
         </div>
@@ -35,7 +38,10 @@ const { objects: performerImages } = await cosmic.objects
     type: "performer-images",
   })
   .props(
-    "metadata.performerimage1, metadata.performerimage2, metadata.performerimage3, metadata.performerimage4"
+    // Dynamically fetch all metadata properties that start with "performerimage"
+    Object.keys({ ...Array.from(Array(10).keys()) })
+      .filter((index) => index.startsWith("metadata.performerimage"))
+      .join(", ")
   );
 
 function getImage(URL: string) {
@@ -44,24 +50,5 @@ function getImage(URL: string) {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/styles/variables";
-
-.performer-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: $small-padding-margin;
-  box-shadow: $box-shadow;
-}
-
-.performer-image-item {
-  max-width: 100%;
-}
-
-@media (max-width: $breakpoint-md) {
-  .performer-image {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+@import "~/assets/styles/images";
 </style>

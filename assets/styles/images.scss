@@ -1,0 +1,10 @@
+@import "variables";
+@import "mixins";
+
+.performer-images {
+  @include image-gallery-styles;
+}
+
+.teacher-images {
+  @include image-gallery-styles;
+}

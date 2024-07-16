@@ -5,10 +5,11 @@
       <heroImage />
 
       <PerformerIntro />
+      <ClientReviews />
       <PerformerPhotos />
 
       <NuxtPage />
-      <div class="contact">
+      <div id="contact">
         <contactForm />
         <footerComponent />
         <NuxtPage />
@@ -22,6 +23,8 @@ import navbarPerformer from "~/components/navbar/navbarPerformer.vue";
 import heroImage from "~/components/other/heroImage.vue";
 
 import PerformerIntro from "~/components/CMS/performer/PerformerIntro.vue";
+import ClientReviews from "~/components/CMS/performer/ClientReviews.vue";
+
 import PerformerPhotos from "~/components/CMS/performer/PerformerPhotos.vue";
 
 import contactForm from "~/components/other/contactForm.vue";

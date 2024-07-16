@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 //making hero section cards responsive
 
@@ -14,14 +15,10 @@
 }
 //used in different components
 .card {
+  @include card-base-styles;
   max-width: 18.75em;
   margin: 0 auto;
   padding: $containers-main-padding;
-  background-color: $light;
-  border: 1px solid $beige;
-  border-radius: $small-padding-margin;
-  box-shadow: $box-shadow;
-  text-align: center;
 
   .card-image {
     width: 100%;
