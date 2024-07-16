@@ -1,9 +1,10 @@
 @import "mixins";
+@import "variables";
 
 //this is the video with the rotating logo that appears at the beginning of each page
 .hero-img-container {
   @include centerFlexbox;
-  align-items: center;
+  align-items: $main-position;
   padding: 1em;
 }
 

@@ -1,3 +1,5 @@
+<!-- Parent component upon which the other navbars are based -->
+
 <template>
   <div class="navbar">
     <div class="hamburger" @click="toggleMenu" :class="{ open: menuOpen }">

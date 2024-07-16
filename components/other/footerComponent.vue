@@ -1,3 +1,5 @@
+<!-- footer with social media and copyright symbol -->
+
 <template>
   <footer class="footer">
     <div class="footer-content">

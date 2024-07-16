@@ -1,4 +1,4 @@
-<!-- // app.vue -->
+<!-- blog post that includes an image, title and text to describe the research projects -->
 <script setup lang="ts">
 import { createBucketClient } from "@cosmicjs/sdk";
 const cosmic = createBucketClient({

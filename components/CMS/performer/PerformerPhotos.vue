@@ -26,6 +26,8 @@
 </template>
 
 <script setup lang="ts">
+// Dynamically fetch all metadata properties that start with "performerimage"
+
 import { createBucketClient } from "@cosmicjs/sdk";
 
 const cosmic = createBucketClient({

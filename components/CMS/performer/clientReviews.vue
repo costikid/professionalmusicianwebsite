@@ -10,6 +10,7 @@
 </template>
 
 <script setup>
+//fetches reviews from cosmic JS
 import { createBucketClient } from "@cosmicjs/sdk";
 
 const cosmic = createBucketClient({

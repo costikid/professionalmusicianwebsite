@@ -5,14 +5,14 @@
   background-color: $green-1;
   color: $light;
   padding: 1em;
-  text-align: center;
+  text-align: $main-position;
   margin-top: 1em;
 
   .footer-content {
     @include centerFlexbox;
 
     flex-direction: column;
-    align-items: center;
+    align-items: $main-position;
 
     p {
       margin: 0;
@@ -21,7 +21,7 @@
 }
 
 .social-media {
-  display: flex;
+  display: $main-layout;
 }
 
 .social-media img {

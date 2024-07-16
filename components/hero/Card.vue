@@ -1,10 +1,12 @@
+<!-- parent component for the cards in homepage. Each card has an image, title, paragraph and button -->
+
 <template>
   <div class="card">
     <img :src="imageSrc" :alt="`${title} Image`" class="card-image" />
     <div class="card-content">
       <h2>{{ title }}</h2>
       <p>{{ description }}</p>
-      <!-- Use <a> tag for navigation -->
+
       <a :href="linkTo" class="card-button">{{ linkText }}</a>
     </div>
   </div>

@@ -1,3 +1,5 @@
+<!-- child components for the 3 cards on the homepage -->
+
 <template>
   <div class="card-container">
     <Card

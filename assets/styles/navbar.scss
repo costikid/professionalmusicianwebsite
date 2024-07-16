@@ -2,8 +2,8 @@
 @import "mixins";
 
 .navbar {
-  display: flex;
-  align-items: center;
+  display: $main-layout;
+  align-items: $main-position;
   justify-content: space-between;
   padding: $small-padding-margin;
   margin-bottom: $small-padding-margin;
@@ -18,10 +18,8 @@
 
   .hamburger {
     @include centerFlexbox;
-
     flex-direction: column;
-    align-items: center;
-
+    align-items: $main-position;
     cursor: pointer;
     width: 2rem;
     height: 2rem;
@@ -29,7 +27,7 @@
     @media (min-width: $breakpoint-md) {
       display: none;
     }
-    //hamburger icon opens and closes the navbar on mobile devices
+
     .line {
       width: 100%;
       height: 2px;
@@ -52,8 +50,8 @@
   }
 
   nav {
-    display: flex;
-    align-items: center;
+    display: $main-layout;
+    align-items: $main-position;
 
     @media (max-width: $breakpoint-md) {
       flex-direction: column;
@@ -66,7 +64,7 @@
     }
 
     .nav-left {
-      display: flex;
+      display: $main-layout;
       align-items: flex-end;
       justify-content: flex-start;
       width: 100%;
@@ -99,7 +97,7 @@
     }
 
     ul {
-      display: flex;
+      display: $main-layout;
       list-style: none;
 
       @media (max-width: $breakpoint-md) {

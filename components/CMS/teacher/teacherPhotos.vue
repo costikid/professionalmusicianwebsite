@@ -38,7 +38,7 @@ const { objects: teacherImages } = await cosmic.objects
     type: "teacher-images",
   })
   .props(
-    // Dynamically fetch all metadata properties that start with "performerimage"
+    // Dynamically fetch all metadata properties that start with "teacherimage"
     Object.keys({ ...Array.from(Array(10).keys()) })
       .filter((index) => index.startsWith("metadata.teacherimage"))
       .join(", ")

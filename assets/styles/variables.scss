@@ -10,9 +10,11 @@ $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 //animation
 $transition: 0.3s ease;
 
-//spacing
+//spacing and positioning
 $containers-main-padding: 1.25em;
 $small-padding-margin: 0.5em;
+$main-position: center;
+$main-layout: flex;
 
 //media queries
 $breakpoint-md: 768px;

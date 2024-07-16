@@ -24,7 +24,6 @@ export default defineNuxtConfig({
       { path: '/research', component: '@/pages/research.vue' },
       { path: '/teacher', component: '@/pages/teacher.vue' },
 
-      // Add other routes as necessary
     ],
   },
 

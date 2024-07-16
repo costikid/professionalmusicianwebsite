@@ -4,7 +4,7 @@
 //making hero section cards responsive
 
 .card-container {
-  display: flex;
+  display: $main-layout;
   flex-direction: column;
   gap: 20px;
 

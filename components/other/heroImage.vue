@@ -1,3 +1,5 @@
+<!-- Rotating logo at the top of each page just below the navbar -->
+
 <template>
   <div class="hero-img-container">
     <video
