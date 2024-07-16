@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Musician/Teacher/Researcher website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# WARNING: Work in progress!
 
-## Setup
+## Done so far:
 
-Make sure to install the dependencies:
+1. Homepage
+2. Performer page (missing the video and logos of the clients the musician has worked for)
+3. Teacher page
+4. SEO
 
-```bash
-# npm
-npm install
+## To do:
 
-# pnpm
-pnpm install
+1. Researcher page like a blog
+2. Optimisation by placing the cosmic js core code in a utils file and not directly in the components
+3. Use real content and not lorem ipsum or stock images
+4. Make the contact form work
 
-# yarn
-yarn install
+## Tech-stack
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. [Nuxt3](https://nuxt.com/)
+2. [Cosmic JS](https://www.cosmicjs.com/) This CMS integrates with Nuxt and enables a non-tech person to modify certain pre-defined sections of the website by themselves
+3. [SCSS](https://sass-lang.com/)
