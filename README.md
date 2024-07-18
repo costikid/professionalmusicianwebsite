@@ -14,7 +14,6 @@
 1. Researcher page like a blog
 2. Optimisation by placing the cosmic js core code in a utils file and not directly in the components
 3. Use real content and not lorem ipsum or stock images
-4. Make the contact form work
 
 ## Tech-stack
 
