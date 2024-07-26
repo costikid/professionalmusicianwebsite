@@ -1,36 +1,34 @@
-<script setup lang="ts">
-import { ref, computed } from "vue";
-import { createBucketClient } from "@cosmicjs/sdk";
+<script setup>
+import { ref, computed } from 'vue';
+import { createBucketClient } from '@cosmicjs/sdk';
 
 const cosmic = createBucketClient({
-  bucketSlug: process.env.BUCKET_SLUG || "",
-  readKey: process.env.BUCKET_READ_KEY || "",
+  bucketSlug: process.env.BUCKET_SLUG || '',
+  readKey: process.env.BUCKET_READ_KEY || ''
 });
 
 const { objects: posts } = await cosmic.objects
   .find({
-    type: "blog-posts",
+    type: 'blog-posts'
   })
-  .props("title,metadata.image,metadata.content");
+  .props('title,metadata.image,metadata.content,slug');
 
-// State to track which post's content is expanded
-const expandedPosts = ref<{ [key: string]: boolean }>({});
+const router = useRouter();
 
 // Helper function to get the truncated content
-function getTruncatedContent(content: string, length: number) {
-  return content.length > length ? content.substring(0, length) + "..." : content;
+function getTruncatedContent(content, length) {
+  return content.length > length ? content.substring(0, length) + '...' : content;
 }
 
 // Helper function to get the image URL
-function getImage(URL: string) {
+function getImage(URL) {
   return `${URL}?w=500&auto=format,compression`;
 }
 
-// Toggle the expanded state of a post
-function toggleContent(postTitle: string) {
-  expandedPosts.value[postTitle] = !expandedPosts.value[postTitle];
-}
-
+// Navigate to the BlogPost component
+// function navigateToPost(slug) {
+//   router.push({ path: `/post/${slug}` });
+// }
 </script>
 
 <template>
@@ -41,10 +39,10 @@ function toggleContent(postTitle: string) {
         <img :src="getImage(post.metadata.image.imgix_url)" :alt="post.title" />
       </div>
       <div>
-        <div v-html="expandedPosts[post.title] ? post.metadata.content : getTruncatedContent(post.metadata.content, 200)"></div>
-        <button @click="toggleContent(post.title)">
-          {{ expandedPosts[post.title] ? "Read Less" : "Read More" }}
-        </button>
+        <div v-html="getTruncatedContent(post.metadata.content, 200)"></div>
+        <a :href="`/research/detail?slug=${post.slug}`">
+          Read More
+        </a>
       </div>
     </div>
   </div>
