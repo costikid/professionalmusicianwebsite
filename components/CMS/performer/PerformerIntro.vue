@@ -11,16 +11,7 @@
 
 <script setup lang="ts">
 // Connect to Cosmic JS
-import { createBucketClient } from "@cosmicjs/sdk";
-
-const bucketSlug = process.env.BUCKET_SLUG || "";
-const readKey = process.env.BUCKET_READ_KEY || "";
-
-const cosmic = createBucketClient({
-  bucketSlug,
-  readKey,
-});
-
+import cosmic from "../../../utils/cosmic"
 const { objects: intros } = await cosmic.objects
   .find({
     type: "performer-intros",

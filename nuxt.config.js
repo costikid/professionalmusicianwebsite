@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   css: ["~/assets/styles/main.scss"],
 
   // Add buildModules and dotenv to handle environment variables
-  buildModules: ["@nuxtjs/style-resources", "@nuxtjs/dotenv"],
+  buildModules: ["@nuxtjs/style-resources", "@nuxtjs/dotenv","@nuxtjs/composition-api/module"],
 
   // Add styleResources for SCSS variables
   styleResources: {

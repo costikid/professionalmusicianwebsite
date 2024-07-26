@@ -28,13 +28,7 @@
 <script setup lang="ts">
 // Dynamically fetch all metadata properties that start with "performerimage"
 
-import { createBucketClient } from "@cosmicjs/sdk";
-
-const cosmic = createBucketClient({
-  bucketSlug: process.env.BUCKET_SLUG || "",
-  readKey: process.env.BUCKET_READ_KEY || "",
-});
-
+import cosmic from "../../../utils/cosmic"
 const { objects: performerImages } = await cosmic.objects
   .find({
     type: "performer-images",

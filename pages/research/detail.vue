@@ -9,13 +9,8 @@
   <script setup>
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
+import cosmic from "../../utils/cosmic"
 
-import { createBucketClient } from "@cosmicjs/sdk";
-
-const cosmic = createBucketClient({
-  bucketSlug: process.env.BUCKET_SLUG || "",
-  readKey: process.env.BUCKET_READ_KEY || "",
-});
 
 const post = ref(null);
 const route = useRoute();

@@ -26,13 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { createBucketClient } from "@cosmicjs/sdk";
-
-const cosmic = createBucketClient({
-  bucketSlug: process.env.BUCKET_SLUG || "",
-  readKey: process.env.BUCKET_READ_KEY || "",
-});
-
+import cosmic from "../../../utils/cosmic"
 const { objects: teacherImages } = await cosmic.objects
   .find({
     type: "teacher-images",

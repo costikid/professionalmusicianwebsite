@@ -1,12 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue';
-import { createBucketClient } from '@cosmicjs/sdk';
-
-const cosmic = createBucketClient({
-  bucketSlug: process.env.BUCKET_SLUG || '',
-  readKey: process.env.BUCKET_READ_KEY || ''
-});
-
+import cosmic from "../../../utils/cosmic"
 const { objects: posts } = await cosmic.objects
   .find({
     type: 'blog-posts'

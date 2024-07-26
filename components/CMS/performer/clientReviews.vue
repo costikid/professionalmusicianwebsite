@@ -11,12 +11,7 @@
 
 <script setup>
 //fetches reviews from cosmic JS
-import { createBucketClient } from "@cosmicjs/sdk";
-
-const cosmic = createBucketClient({
-  bucketSlug: process.env.BUCKET_SLUG || "",
-  readKey: process.env.BUCKET_READ_KEY || "",
-});
+import cosmic from "../../../utils/cosmic"
 
 const { objects: reviews } = await cosmic.objects
   .find({
