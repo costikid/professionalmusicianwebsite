@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import cosmic from "../../../utils/cosmic"
+import cosmic from "../../../utils/cosmic";
 const { objects: teacherImages } = await cosmic.objects
   .find({
     type: "teacher-images",

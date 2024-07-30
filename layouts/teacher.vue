@@ -4,7 +4,7 @@
       <navbarTeacher />
       <heroImage />
       <TeacherIntro />
-      <TeacherPhotos />
+      <TeacherPhotosGallery />
 
       <NuxtPage />
       <div id="contact">
@@ -21,7 +21,7 @@ import heroImage from "~/components/other/heroImage.vue";
 
 import navbarTeacher from "~/components/navbar/navbarTeacher.vue";
 import TeacherIntro from "~/components/CMS/teacher/TeacherIntro.vue";
-import TeacherPhotos from "~/components/CMS/teacher/TeacherPhotos.vue";
+import TeacherPhotosGallery from "~/components/CMS/teacher/TeacherPhotosGallery.vue";
 import contactForm from "~/components/other/contactForm.vue";
 import footerComponent from "~/components/other/footerComponent.vue";
 </script>
