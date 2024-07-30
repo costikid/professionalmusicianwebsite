@@ -4,7 +4,7 @@
       <NavbarResearch />
       <heroImage />
 
-      <ResearchProject />
+      <ResearchProjectMain />
 
       <NuxtPage />
       <div id="contact">
@@ -19,7 +19,7 @@
 <script setup>
 import NavbarResearch from "~/components/navbar/navbarResearch.vue";
 import heroImage from "~/components/other/heroImage.vue";
-import ResearchProject from "~/components/CMS/research/ResearchProject.vue";
+import ResearchProjectMain from "~/components/CMS/research/ResearchProjectMain.vue";
 
 import contactForm from "~/components/other/contactForm.vue";
 import footerComponent from "~/components/other/footerComponent.vue";
