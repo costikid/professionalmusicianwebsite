@@ -23,7 +23,7 @@ import navbarPerformer from "~/components/navbar/navbarPerformer.vue";
 import heroImage from "~/components/other/heroImage.vue";
 
 import PerformerIntro from "~/components/CMS/performer/PerformerIntro.vue";
-import ClientReviews from "~/components/CMS/performer/ClientReviews.vue";
+import ClientReviews from "~/components/CMS/performer/clientReviews.vue";
 
 import PerformerPhotos from "~/components/CMS/performer/PerformerPhotos.vue";
 
