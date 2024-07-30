@@ -80,6 +80,7 @@
       .contact-button {
         @include centerFlexbox;
         margin-right: $small-padding-margin;
+        transition: $transition;
 
         @media (max-width: $breakpoint-md) {
           margin-right: 0;

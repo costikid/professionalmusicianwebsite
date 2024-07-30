@@ -1,0 +1,29 @@
+@import "variables";
+
+.project-link {
+  color: $dark-brown;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: $transition;
+}
+
+.project-link:hover {
+  color: darken($purple, 10%);
+}
+
+.research-post {
+  box-shadow: $box-shadow;
+  padding: $small-padding-margin;
+  margin-bottom: $small-padding-margin;
+}
+
+.research-post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: underline;
+  color: $dark-brown;
+}

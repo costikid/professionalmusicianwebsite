@@ -5,17 +5,17 @@
 ## Done so far:
 
 1. Homepage
-2. Performer page (missing the video and logos of the clients the musician has worked for)
+2. Performer page
 3. Teacher page
 4. SEO
+5. Researcher page
 
 ## To do:
 
-1. Researcher page like a blog
-2. Optimisation by placing the cosmic js core code in a utils file and not directly in the components
-3. Use real content and not lorem ipsum or stock images
-4. Convert images to webp to improve loading speed
-5. Use lazy loading for images
+1. Use real content and not lorem ipsum or stock images
+2. Convert images to webp to improve loading speed
+3. Use lazy loading for images
+4. Carousel that dinamically fetches videos and photos uploaded by the musician. Fetching them from either AWS Bucket or cloudnary. Still deciding.
 
 ## Tech-stack
 

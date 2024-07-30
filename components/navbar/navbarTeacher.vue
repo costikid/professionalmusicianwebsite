@@ -1,3 +1,5 @@
+<!-- This is the navbar specific to the pedagogy page -->
+
 <template>
   <ParentNavbar>
     <template #nav-links>

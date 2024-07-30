@@ -4,4 +4,4 @@ const cosmic = createBucketClient({
     readKey: process.env.BUCKET_READ_KEY || "",
 });
 
-export default cosmic;
+export default cosmic; //function to use when cosmic js cms is needed 
